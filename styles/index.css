@@ -1,0 +1,143 @@
+#hero {
+  padding-top: 80px;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bg-gradient {
+  background: var(--hero-gradient);
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-right {
+  width: 40%;
+}
+
+.hero-title {
+  color: white;
+  font-size: 4rem;
+  opacity: 0;
+  transform: translateY(5px);
+  animation: text-appear 0.75s ease-out 200ms forwards;
+}
+
+.hero-subtitle {
+  color: rgb(200, 200, 200);
+  font-weight: 600;
+  font-size: x-large;
+  padding-left: 2px;
+  width: 70%;
+  opacity: 0;
+  transform: translateY(5px);
+  animation: text-appear 3.75s ease-out 500ms forwards;
+}
+
+.hero-image {
+  height: 32rem;
+  border-radius: 32px;
+}
+
+#contact {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+#redirects {
+  padding-top: 80px;
+  min-height: 30vh;
+}
+
+.contact-card-container {
+  width: 100%;
+  max-width: 600px;
+  float: right;
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  gap: 32px;
+  border: 0.4px solid hsl(220, 62%, 25%);
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+
+  transition: border-color 200ms;
+}
+
+.contact-link {
+  padding: 4px 12px;
+  border-radius: 40px;
+  cursor: pointer;
+
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  transition: all 200ms;
+}
+.contact-link:hover {
+  opacity: 0.85;
+}
+
+.contact-link-whatsapp {
+  background-color: var(--bg-whatsapp);
+  color: var(--dark);
+}
+
+.contact-link-telegram {
+  background-color: var(--bg-telegram);
+  color: var(--light-gray);
+}
+
+.contact-link-email {
+  background-color: var(--light-gray);
+  color: var(--dark);
+}
+
+/* Mobile styles */
+
+@media screen and (max-width: 960px) {
+  #hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-left {
+    width: 100%;
+  }
+  .hero-right {
+    width: 100%;
+  }
+  .hero-image {
+    object-fit: cover;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 9999px;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-subtitle {
+    width: 100%;
+  }
+  .contact-card-container {
+    width: auto;
+    float: none;
+  }
+}
+
+/* Animations */
+
+@keyframes text-appear {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

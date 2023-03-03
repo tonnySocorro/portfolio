@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+    <link rel="stylesheet" href="styles/grid-layout.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Mi portfolio</title>
+  </head>
+  <body class="bg-gradient">
+    <!-- Barra de navegación -->
+    <nav class="nav-container">
+      <div class="nav-item">
+        <a class="font-semibold text-white text-xl" href="./index.html"
+          >Tonny Socorro del Pozo</a
+        >
+      </div>
+      <div class="nav-item flex-row items-center gap-4">
+        <a class="text-white text-lg" href="./aficiones.html">Aficiones</a>
+        <a class="text-white text-lg" href="./series.html">Series</a>
+        <a class="text-white text-lg" href="./musica.html">Música</a>
+        <a class="text-white text-lg" href="./index.html#contact">Contáctame</a>
+      </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main-layout">
+      <!-- Hero -->
+      <section id="hero">
+        <div class="hero-left">
+          <h1 class="hero-title">Bienvenido a mi portfolio</h1>
+          <p class="hero-subtitle">
+            Mi nombre es Tonny Socorro del Pozo, tengo 24 años de edad, nací en la Habana, Cuba. Me crié en una familia numerosa, cuatros hermanos y dos de ellos gemelas. Estudié en la universidad politecnica de la habana, soy ingeniera informatica
+            graduada del año 2020. Comencé la vida laborar en la Universidad de a Habana como adiestrada.
+          </p>
+          </p>
+        </div>
+        <div class="hero-right">
+          <img
+            alt="me"
+            class="hero-image shadow-lg"
+            src="./images/me2.png"
+          />
+        </div>
+      </section>
+
+      <!-- Redirects -->
+      <section id="redirects">
+        <h1 class="hero-title">Conóceme más</h1>
+        <div class="flex-col gap-10">
+          <div class="flex-row justify-center">
+            <div class="fancy-button-1">
+              <a href="./aficiones.html">Aficiones</a>
+            </div>
+          </div>
+          <div class="flex-row justify-around flex-wrap gap-10">
+            <div class="fancy-button-1">
+              <a href="./series.html">Series favoritas</a>
+            </div>
+            <div class="fancy-button-1">
+              <a href="./musica.html">Artistas favoritos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contact">
+        <h1 class="text-white hero-title">Contáctame</h1>
+        <div class="contact-card-container">
+          <div class="text-xl font-semibold flex-row items-center gap-2">
+            <span>Email:</span>
+            <a
+              class="contact-link contact-link-email"
+              href="mailto:tonnysocorro@gmail.com"
+              target="_blank"
+              >tonnysocorro@gmail.com</a
+            >
+          </div>
+          <div class="text-xl font-semibold flex-row items-center gap-2">
+            <span>Whatsapp:</span>
+            <a
+              class="contact-link contact-link-whatsapp"
+              href="https://wa.me/+5352363527?text=Hello"
+              target="_blank"
+              >+5352363527</a
+            >
+          </div>
+          <div class="text-xl font-semibold flex-row items-center gap-2">
+            <span>Telegram:</span>
+            <a
+              class="contact-link contact-link-telegram"
+              href="https://t.me/tonnysocorro"
+              target="_blank"
+              >@tonnysocorro</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

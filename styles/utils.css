@@ -1,0 +1,129 @@
+/* Width styles */
+.w-half {
+  width: 50%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/* Padding styles */
+.px-1 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.px-2 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.px-3 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.px-4 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Flex styles */
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 8px;
+}
+
+.gap-2 {
+  gap: 16px;
+}
+
+.gap-3 {
+  gap: 24px;
+}
+
+.gap-4 {
+  gap: 32px;
+}
+
+.gap-10 {
+  gap: 80px;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+/* Font styles */
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-md {
+  font-size: medium;
+}
+
+.text-lg {
+  font-size: large;
+}
+
+.text-xl {
+  font-size: x-large;
+}
+
+.text-2xl {
+  font-size: xx-large;
+}
+
+.text-3xl {
+  font-size: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-gray-1 {
+  color: rgb(200, 200, 200);
+}
+
+/* Shadow styles */
+
+.shadow-lg {
+  box-shadow: 0 0px 3px 1px var(--dark);
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+    <link rel="stylesheet" href="styles/grid-layout.css" />
+    <link rel="stylesheet" href="styles/series.css" />
+    <title>Música favorita</title>
+  </head>
+  <body class="main-layout">
+    <!-- Barra de navegación -->
+    <nav class="nav-container">
+      <div class="nav-item">
+        <a class="font-semibold text-white text-xl" href="./index.html"
+          >Tonny Socorro del Pozo</a
+        >
+      </div>
+      <div class="nav-item flex-row items-center gap-4">
+        <a class="text-white text-lg" href="./aficiones.html">Aficiones</a>
+        <a class="text-white text-lg" href="./series.html">Series</a>
+        <a class="text-white text-lg" href="./musica.html">Música</a>
+        <a class="text-white text-lg" href="./index.html#contact">Contáctame</a>
+      </div>
+    </nav>
+
+    <main class="main-layout flex-col items-center">
+      <span class="text-3xl font-bold">Mis artistas favoritos</span>
+      <section id="cards" class="grid-container">
+        <div class="card-container">
+          <img
+            src="./images/lana-del-rey-cover.webp"
+            alt="Lana del Rey"
+            class="card-image"
+          />
+          <div class="flex-row justify-between">
+            <div class="card-title">Lana del Rey</div>
+            <div class="card-rating">
+              <img class="card-rating-icon" src="icons/star.svg" /><span
+                >4.7</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <img
+            src="./images/suburban-cover.jpg"
+            alt="Sub Urban"
+            class="card-image"
+          />
+          <div class="flex-row justify-between">
+            <div class="card-title">Sub Urban</div>
+            <div class="card-rating">
+              <img class="card-rating-icon" src="icons/star.svg" /><span
+                >3.8</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <img
+            src="./images/21-pilots-cover.jpg"
+            alt="Twenty One Pilots"
+            class="card-image"
+          />
+          <div class="flex-row justify-between">
+            <div class="card-title">Twenty One Pilots</div>
+            <div class="card-rating">
+              <img class="card-rating-icon" src="icons/star.svg" /><span
+                >4.9</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <img
+            src="./images/imagine-dragons-cover.jpg"
+            alt="Imagine Dragons"
+            class="card-image"
+          />
+          <div class="flex-row justify-between">
+            <div class="card-title">Imagine Dragons</div>
+            <div class="card-rating">
+              <img class="card-rating-icon" src="icons/star.svg" /><span
+                >4.6</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

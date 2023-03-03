@@ -1,0 +1,62 @@
+** El sitio web se divide en 3 páginas principales:
+
+- index.html: Página de inicio, información general, redirecciones a otras páginas y sección de contactos.
+
+- aficiones.html: Contenido relacionado con mis aficiones de una manera general.
+
+- musica.html: Una lista de mis artistas preferidos.
+
+- series.html: Una lista de mis series y películas preferidas.
+
+Cada página contiene una barra de navegación que permite navegar hacia las demás, por lo que con un click se puede llegar a ver
+cualquier contenido. El sitio es completamente responsivo para las 3 pantallas principales (PC, tablet, móvil).
+
+** Estilos:
+
+Los estilos fueron divididos en varios archivos .css en orden de su funcionalidad, los que tuvieran una funcionalidad similar fueron
+ubicados en el mismo archivo. La separación se hizo de la siguiente manera:
+
+components.css: Estilos de las componentes comunes que fueron usadas en las distintas páginas (navbar, fancy-buttons, ...).
+
+colors.css: Algunos colores comunes entre páginas en formato de variables (var).
+
+grid-layout.css: El layout predefinido para la grilla en las páginas musica.htmls y series.html.
+
+global.css: Estilos que deben ser aplicados en todas las páginas (font-family, layout principal, ...).
+
+utils.css: Algunos estilos útiles que pueden ser usados en todas las páginas, pero sin llegar a ser de componentes específicas.
+
+Además de eso se creó un archivo css dedicado por cada página para especificar los estilos específicos a aplicar en esa página.
+
+- index.css
+- aficiones.css
+- musica.css
+- series.css
+
+** CSS Colors:
+
+Se utilizaron los diferentes formatos que provee la API de colores, tanto rgb como hexadecimal, rgba en el caso de la barra de navegación
+para lograr el efecto de transparencia, y en especial el color de fondo de todos los sitios con un linear-gradient de 3 colores en formato rgba.
+Por la dificultad de escribir su valor fue definido en una variable.
+
+** CSS Grid:
+
+Se utilizó CSS Grid (grid-template-columns) en conjunto con @media queries para el renderizado de las listas de cards en el caso de musica.html y series.html.
+De esta manera en vistas de gran tamaño (PC) el grid muestra 3 elementos por fila, 2 elementos en caso de vistas de tamaño medio (tablet)
+y 1 para vistas pequeñas (móvil).
+
+** CSS Flexbox:
+
+Se explotó la funcionalidad de flexboxs en varios lugares del sitio, a partir de los selectores de clases definidos en utils.css se podía controlar fácilmente
+con classnames las propiedades de los contenedores flexboxs, por ejemplo el container de la barra de navegación que posee un propiedades de flexboxs con
+justify-between entre el icono y los links, y estos links también usan flexbox para mostrarse de manera horizontal.
+
+** Animaciones y transiciones:
+
+El texto principal, así como el secundario se encuentran animados usando @keyframes, inicialmente el texto se encuentra con opacidad 0, o sea, invisible, y
+trasladado algunos píxeles hacia abajo, y la animación se encarga de modificar la opacidad a 1 (visible) y ajustar la posición trasladada a su lugar de origen.
+A estas 2 animaciones (Título principal y título secundario) se les provee un retraso diferente, así como una duración diferente, para lograr el efecto de que
+un text aparece primero que el otro.
+
+Además de eso se emplearon transiciones para determinados elementos de la web, como por ejemplo la componente card, cuya imagen pierde opacidad cuando está en estado
+hover, de la misma manera los fancy buttons de la página de inicio.

@@ -1,0 +1,17 @@
+.bg-gradient {
+  background: var(--hero-gradient);
+}
+
+#aficiones {
+  padding-top: 80px;
+}
+
+.paragraph {
+  width: 50%;
+}
+
+@media screen and (max-width: 960px) {
+  .paragraph {
+    width: 100%;
+  }
+}
